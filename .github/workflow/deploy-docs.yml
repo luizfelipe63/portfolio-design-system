@@ -1,4 +1,4 @@
-name: Storybook deploy
+name: Deploy Storybook
 
 on:
   push:
@@ -19,12 +19,12 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: yarn ci
+        run: npm ci --legacy-peer-deps
 
       - name: Build Storybook
-        run: yarn sb-build
+        run: npm run build-storybook
 
-      - name: Deploy Storybook to Github pages
-        run: yarn sb-deploy -- --ci --existing-output-dir=storybook-static
+      - name: Deploy Storybook
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
