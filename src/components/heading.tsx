@@ -8,11 +8,12 @@ import { Slot } from '@radix-ui/react-slot';
 export interface headingProps {
   size?: 'sm' | 'md' | 'lg',
   children: ReactNode,
-  asChild?: boolean
+  asChild?: boolean,
+  className?: string
 }
 
 
-export function heading({ size = 'md', children, asChild }: headingProps) {
+export function Heading({ size = 'md', children, asChild, className }: headingProps) {
   const Comp = asChild ? Slot : 'h2';
 
   return (
@@ -23,7 +24,8 @@ export function heading({ size = 'md', children, asChild }: headingProps) {
             'text-lg': size == 'sm',
             'text-xl': size == 'md',
             'text-2xl': size == 'lg'
-          }
+          },
+          className,
         )
     }
     >
