@@ -22,7 +22,6 @@ export function SignIn() {
   return (
     <div className='w-screen h-screen bg-bg flex items-center justify-center text-gray-800 flex-col'>
       <header className='flex flex-col items-center '>
-        <Logo/>
 
         <Heading size='lg' className='mt-4'>
           Luiz<span className='text-blue'>Felipe</span>
