@@ -11,20 +11,20 @@
 
 <div align="center"><img src="/assets/Screenchot.png"></div>
 
-## Demo
+#### Demo
 [Live Demo](https://portfolio-ds-pi.vercel.app/)
 
-## Storybook
+#### Storybook
 [Live Storybook](https://luizfelipe63.github.io/portfolio-design-system/)
 
-## Figma
+#### Figma
 [Figma](https://www.figma.com/file/ZyobhMy33hYZ52lcioKNqv/Design-System-Portfolio?node-id=0%3A1)
 
-## Tecnologias
-* Vite
-* React
-* TypeScript
-* Storybook
-* Radix
-* Tailwindcss
-* Figma
+#### Tecnologias
+- Vite
+- React
+- TypeScript
+- Storybook
+- Radix
+- Tailwindcss
+- Figma
