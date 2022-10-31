@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, HtmlHTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { clsx } from 'clsx';
 import { Slot } from '@radix-ui/react-slot';
 
